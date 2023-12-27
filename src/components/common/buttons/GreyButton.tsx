@@ -14,6 +14,7 @@ const GreyButton: FC<Props> = ({ text }) => (
     color="#666666"
     borderRadius="5px"
     border="2px"
+    fontWeight={500}
     borderColor="#f7f7face"
     fontSize="14px"
     _hover={{

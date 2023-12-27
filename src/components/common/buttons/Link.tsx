@@ -11,7 +11,7 @@ const Link: FC<Props> = ({ text }) => (
     px={6}
     color="#000000"
     fontSize="12px"
-    fontWeight="400"
+    fontWeight={500}
     textTransform="uppercase"
     letterSpacing="1.5px"
     _hover={{

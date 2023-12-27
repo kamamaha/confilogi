@@ -14,6 +14,7 @@ const BlueButton: FC<Props> = ({ text }) => (
     color="white"
     borderRadius="5px"
     border="2px"
+    fontWeight={500}
     borderColor="hsl(231, 69%, 60%)"
     fontSize="14px"
     _hover={{

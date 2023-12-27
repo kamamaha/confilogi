@@ -15,6 +15,7 @@ const RedButton: FC<Props> = ({ text, isCapitalized = false }) => (
     boxShadow="0px 8px 11px -4px rgba(210, 213, 237, 1)"
     color="white"
     borderRadius="5px"
+    fontWeight={500}
     border="2px"
     borderColor="hsl(0, 94%, 66%)"
     fontSize="12px"
