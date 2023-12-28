@@ -2,7 +2,9 @@ import React, { FC, ReactElement, useState } from "react"
 import { Flex } from "@chakra-ui/react"
 import MenuToggle from "./MenuToggle"
 import MenuLinks from "./MenuLinks"
-import Logo from "./Logo"
+import Logo from "../common/icons/Logo"
+import LogoWhite from "../common/icons/LogoWhite"
+import LogoMobile from "../common/icons/LogoMobile"
 
 type NavBarContainerProps = {
   children: ReactElement[]
@@ -17,7 +19,8 @@ const NavBarContainer: FC<NavBarContainerProps> = ({ children, isOpen }) => {
       wrap="wrap"
       w="100%"
       mb={3}
-      p={8}
+      py={3}
+      px={8}
       position="fixed"
       zIndex={1140}
       bgColor={{ base: isOpen ? "hsl(229, 31%, 21%, 90%)" : "white" }}
@@ -32,19 +35,9 @@ const NavBar = () => {
 
   const toggle = () => setIsOpen(!isOpen)
 
-  if (isOpen) {
-    return (
-      <NavBarContainer isOpen={isOpen}>
-        <Logo />
-        <MenuToggle toggle={toggle} isOpen={isOpen} />
-        <MenuLinks isOpen={isOpen} />
-      </NavBarContainer>
-    )
-  }
-
   return (
     <NavBarContainer isOpen={isOpen}>
-      <Logo />
+      {isOpen ? <LogoMobile /> : <Logo />}
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>

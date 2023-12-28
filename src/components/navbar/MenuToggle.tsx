@@ -2,7 +2,7 @@ import React, { FC } from "react"
 import { Box } from "@chakra-ui/react"
 
 const CloseIcon = () => (
-  <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+  <svg cursor="pointer" width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
     <title>Close</title>
     <path
       fill="white"
@@ -13,6 +13,7 @@ const CloseIcon = () => (
 
 const MenuIcon = () => (
   <svg
+    cursor="pointer"
     width="24px"
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"

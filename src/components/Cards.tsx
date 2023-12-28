@@ -9,7 +9,7 @@ import BlueButton from "./common/buttons/BlueButton"
 const Cards = () => {
   return (
     <>
-      <Text
+      <Text  id="pricing"
         mt={"150px"}
         as={"h3"}
         fontWeight={500}

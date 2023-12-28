@@ -45,7 +45,7 @@ const Newsletter: FC<Props> = ({
   }, [joinedNumber])
 
   return (
-    <Flex
+    <Flex id="contact"
       align={"center"}
       justify={"center"}
       py={10}

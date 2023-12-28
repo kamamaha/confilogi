@@ -1,12 +1,30 @@
 import React, { FC } from "react"
 import { Box, Stack } from "@chakra-ui/react"
-import MenuItem from "./MenuItem"
 import Link from "../common/buttons/Link"
 import RedButton from "../common/buttons/RedButtton"
+import OutlineButton from "../common/buttons/OutlineButton"
+import FacebookIcons from "../common/icons/FacebookIcon"
+import TwitterIcon from "../common/icons/TwitterIcon"
+import styled from "styled-components"
+
+const SocialWrapper = styled.div`
+display: flex;
+  svg{
+    margin: 0 20px;
+    path{
+      &:hover{
+        fill:hsl(0, 94%, 66%);
+        transition: 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+`
 
 type Props = {
   isOpen: boolean
 }
+
 const MenuLinks: FC<Props> = ({ isOpen }) => {
   return (
     <Box
@@ -20,19 +38,22 @@ const MenuLinks: FC<Props> = ({ isOpen }) => {
         justify={["center", "space-between", "flex-end", "flex-end"]}
         direction={["column", "column", "row", "row"]}
         pt={[4, 4, 0, 0]}
+        gap={0}
       >
-        <MenuItem to="#features">
-          <Link text="features" />
-        </MenuItem>
-        <MenuItem to="#pricing">
-          <Link text="pricing" />
-        </MenuItem>
-        <MenuItem to="#contact">
-          <Link text="contact" />
-        </MenuItem>
-        <MenuItem to="#login">
+        <Link text="features" to="#features" isOpen={isOpen} />
+        <Link text="pricing" to="#pricing" isOpen={isOpen} />
+        <Link text="contact" to="#contact" isOpen={isOpen} isLast />
+        {isOpen ? (
+          <>
+            <OutlineButton text="Login" isCapitalized />
+            <SocialWrapper>
+              <FacebookIcons />
+              <TwitterIcon />
+            </SocialWrapper>
+          </>
+        ) : (
           <RedButton text="login" isCapitalized />
-        </MenuItem>
+        )}
       </Stack>
     </Box>
   )

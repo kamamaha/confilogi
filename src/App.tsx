@@ -6,6 +6,7 @@ import TabWrapper from "./components/TabWrapper"
 import Cards from "./components/Cards"
 import AccordionWrapper from "./components/AccordionWrapper"
 import Newsletter from "./components/Newsletter"
+import Footer from "./components/Footer"
 
 const PageWrapper = styled.div`
   margin-left: auto;
@@ -21,6 +22,7 @@ function App() {
       <Cards />
       <AccordionWrapper />
       <Newsletter />
+      <Footer/>
     </PageWrapper>
   )
 }

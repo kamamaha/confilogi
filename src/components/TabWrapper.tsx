@@ -71,7 +71,7 @@ const TabSelect = styled.div`
 const TabWrapper = () => {
   const [tabIndex, setTabIndex] = useState(0)
   return (
-    <Tabs onChange={(index) => setTabIndex(index)} mt={150}>
+    <Tabs id="features" onChange={(index) => setTabIndex(index)} mt={150}>
       <Text
         as={"h3"}
         fontWeight={500}
