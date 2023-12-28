@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar"
 import Hero from "./components/Hero"
 import styled from "styled-components"
 import TabWrapper from "./components/TabWrapper"
+import Cards from "./components/Cards"
 
 const PageWrapper = styled.div`
   margin-left: auto;
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Hero />
       <TabWrapper />
+      <Cards />
     </PageWrapper>
   )
 }

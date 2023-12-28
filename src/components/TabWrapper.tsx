@@ -63,7 +63,7 @@ const TabSelect = styled.div`
     text-align: center;
     &[aria-selected="true"] {
       border-color: hsl(0, 94%, 66%);
-      color: black;
+      color: hsl(229, 31%, 21%);
     }
   }
 `
@@ -104,150 +104,149 @@ const TabWrapper = () => {
         </Stack>
       </TabList>
       <TabPanels>
-     
-          <TabPanel p={0} pt={70}>
-            <Stack
-              direction={{ base: "column", md: "row" }}
-              maxW={"1440px"}
-              ml={"auto"}
-              mr={"auto"}
-            >
-              <ImageWrapper>
-                <IllustrationTab1 />
-              </ImageWrapper>
+        <TabPanel p={0} pt={70}>
+          <Stack
+            direction={{ base: "column", md: "row" }}
+            maxW={"1440px"}
+            ml={"auto"}
+            mr={"auto"}
+          >
+            <ImageWrapper>
+              <IllustrationTab1 />
+            </ImageWrapper>
 
-              <Flex pl={4} pr={4} flex={1} align={"center"} justify={"center"}>
-                <Stack spacing={6} w={"full"} maxW={"lg"}>
-                  <Text
-                    as={"h3"}
-                    fontWeight={500}
-                    fontSize={{ base: "24px", md: "30px" }}
-                    lineHeight={{ base: "30px", md: "45px" }}
-                    align={{ base: "center", md: "left" }}
-                    mt={{ base: "50px", md: "0" }}
-                  >
-                    Bookmark in one click
-                  </Text>
-                  <Text
-                    as={"p"}
-                    fontSize="lg"
-                    align={{ base: "center", md: "left" }}
-                  >
-                    A clean and simple interface to organize your favourite
-                    websites. Open a new browser tab and see your sites load
-                    instntly. Try it for free.
-                  </Text>
-                  <Stack
-                    direction={{ base: "row", md: "row" }}
-                    spacing={4}
-                    ml={{ base: "auto", md: "0" }}
-                    mr={{ base: "auto", md: "0" }}
-                  >
-                    <BlueButton text="More Info" />
-                  </Stack>
+            <Flex pl={4} pr={4} flex={1} align={"center"} justify={"center"}>
+              <Stack spacing={6} w={"full"} maxW={"lg"}>
+                <Text
+                  as={"h3"}
+                  fontWeight={500}
+                  fontSize={{ base: "24px", md: "30px" }}
+                  lineHeight={{ base: "30px", md: "45px" }}
+                  align={{ base: "center", md: "left" }}
+                  mt={{ base: "50px", md: "0" }}
+                >
+                  Bookmark in one click
+                </Text>
+                <Text
+                  as={"p"}
+                  fontSize="lg"
+                  align={{ base: "center", md: "left" }}
+                >
+                  A clean and simple interface to organize your favourite
+                  websites. Open a new browser tab and see your sites load
+                  instntly. Try it for free.
+                </Text>
+                <Stack
+                  direction={{ base: "row", md: "row" }}
+                  spacing={4}
+                  ml={{ base: "auto", md: "0" }}
+                  mr={{ base: "auto", md: "0" }}
+                >
+                  <BlueButton text="More Info" />
                 </Stack>
-              </Flex>
-            </Stack>
-            <Flex justify={"start"}>
-              <BackgroundShape />
+              </Stack>
             </Flex>
-          </TabPanel>
+          </Stack>
+          <Flex justify={"start"}>
+            <BackgroundShape />
+          </Flex>
+        </TabPanel>
 
-          <TabPanel p={0} pt={70}>
-            <Stack
-              direction={{ base: "column", md: "row" }}
-              maxW={"1440px"}
-              ml={"auto"}
-              mr={"auto"}
-            >
-              <ImageWrapper>
-                <IllustrationTab2 />
-              </ImageWrapper>
+        <TabPanel p={0} pt={70}>
+          <Stack
+            direction={{ base: "column", md: "row" }}
+            maxW={"1440px"}
+            ml={"auto"}
+            mr={"auto"}
+          >
+            <ImageWrapper>
+              <IllustrationTab2 />
+            </ImageWrapper>
 
-              <Flex pl={4} pr={4} flex={1} align={"center"} justify={"center"}>
-                <Stack spacing={6} w={"full"} maxW={"lg"}>
-                  <Text
-                    as={"h3"}
-                    fontWeight={500}
-                    fontSize={{ base: "24px", md: "30px" }}
-                    lineHeight={{ base: "30px", md: "45px" }}
-                    align={{ base: "center", md: "left" }}
-                    mt={{ base: "50px", md: "0" }}
-                  >
-                    Intelligent search
-                  </Text>
-                  <Text
-                    as={"p"}
-                    fontSize="lg"
-                    align={{ base: "center", md: "left" }}
-                  >
-                    Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
-                  </Text>
-                  <Stack
-                    direction={{ base: "row", md: "row" }}
-                    spacing={4}
-                    ml={{ base: "auto", md: "0" }}
-                    mr={{ base: "auto", md: "0" }}
-                  >
-                    <BlueButton text="More Info" />
-                  </Stack>
+            <Flex pl={4} pr={4} flex={1} align={"center"} justify={"center"}>
+              <Stack spacing={6} w={"full"} maxW={"lg"}>
+                <Text
+                  as={"h3"}
+                  fontWeight={500}
+                  fontSize={{ base: "24px", md: "30px" }}
+                  lineHeight={{ base: "30px", md: "45px" }}
+                  align={{ base: "center", md: "left" }}
+                  mt={{ base: "50px", md: "0" }}
+                >
+                  Intelligent search
+                </Text>
+                <Text
+                  as={"p"}
+                  fontSize="lg"
+                  align={{ base: "center", md: "left" }}
+                >
+                  Our powerful search feature will help you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
+                </Text>
+                <Stack
+                  direction={{ base: "row", md: "row" }}
+                  spacing={4}
+                  ml={{ base: "auto", md: "0" }}
+                  mr={{ base: "auto", md: "0" }}
+                >
+                  <BlueButton text="More Info" />
                 </Stack>
-              </Flex>
-            </Stack>
-            <Flex justify={"start"}>
-              <BackgroundShape />
+              </Stack>
             </Flex>
-          </TabPanel>
+          </Stack>
+          <Flex justify={"start"}>
+            <BackgroundShape />
+          </Flex>
+        </TabPanel>
 
-          <TabPanel p={0} pt={70}>
-            <Stack
-              direction={{ base: "column", md: "row" }}
-              maxW={"1440px"}
-              ml={"auto"}
-              mr={"auto"}
-            >
-              <ImageWrapper>
-                <IllustrationTab3 />
-              </ImageWrapper>
+        <TabPanel p={0} pt={70}>
+          <Stack
+            direction={{ base: "column", md: "row" }}
+            maxW={"1440px"}
+            ml={"auto"}
+            mr={"auto"}
+          >
+            <ImageWrapper>
+              <IllustrationTab3 />
+            </ImageWrapper>
 
-              <Flex pl={4} pr={4} flex={1} align={"center"} justify={"center"}>
-                <Stack spacing={6} w={"full"} maxW={"lg"}>
-                  <Text
-                    as={"h3"}
-                    fontWeight={500}
-                    fontSize={{ base: "24px", md: "30px" }}
-                    lineHeight={{ base: "30px", md: "45px" }}
-                    align={{ base: "center", md: "left" }}
-                    mt={{ base: "50px", md: "0" }}
-                  >
-                    Share your bookmarks
-                  </Text>
-                  <Text
-                    as={"p"}
-                    fontSize="lg"
-                    align={{ base: "center", md: "left" }}
-                  >
-                    Easly share your bookmarks and collections with others. Create a shareable link that you can send at tke click of a button.
-                  </Text>
-                  <Stack
-                    direction={{ base: "row", md: "row" }}
-                    spacing={4}
-                    ml={{ base: "auto", md: "0" }}
-                    mr={{ base: "auto", md: "0" }}
-                  >
-                    <BlueButton text="More Info" />
-                  </Stack>
+            <Flex pl={4} pr={4} flex={1} align={"center"} justify={"center"}>
+              <Stack spacing={6} w={"full"} maxW={"lg"}>
+                <Text
+                  as={"h3"}
+                  fontWeight={500}
+                  fontSize={{ base: "24px", md: "30px" }}
+                  lineHeight={{ base: "30px", md: "45px" }}
+                  align={{ base: "center", md: "left" }}
+                  mt={{ base: "50px", md: "0" }}
+                >
+                  Share your bookmarks
+                </Text>
+                <Text
+                  as={"p"}
+                  fontSize="lg"
+                  align={{ base: "center", md: "left" }}
+                >
+                  Easly share your bookmarks and collections with others. Create
+                  a shareable link that you can send at tke click of a button.
+                </Text>
+                <Stack
+                  direction={{ base: "row", md: "row" }}
+                  spacing={4}
+                  ml={{ base: "auto", md: "0" }}
+                  mr={{ base: "auto", md: "0" }}
+                >
+                  <BlueButton text="More Info" />
                 </Stack>
-              </Flex>
-            </Stack>
-            <Flex justify={"start"}>
-              <BackgroundShape />
+              </Stack>
             </Flex>
-          </TabPanel>
-       
+          </Stack>
+          <Flex justify={"start"}>
+            <BackgroundShape />
+          </Flex>
+        </TabPanel>
       </TabPanels>
-
-     
     </Tabs>
   )
 }

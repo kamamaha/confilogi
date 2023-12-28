@@ -10,7 +10,7 @@ const Link: FC<Props> = ({ text }) => (
     variant="ghost"
     py={5}
     px={6}
-    color="#000000"
+    color="hsl(229, 31%, 21%)"
     fontSize="12px"
     fontWeight={500}
     textTransform="uppercase"
