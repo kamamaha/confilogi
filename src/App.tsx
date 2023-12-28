@@ -5,6 +5,7 @@ import styled from "styled-components"
 import TabWrapper from "./components/TabWrapper"
 import Cards from "./components/Cards"
 import AccordionWrapper from "./components/AccordionWrapper"
+import Newsletter from "./components/Newsletter"
 
 const PageWrapper = styled.div`
   margin-left: auto;
@@ -19,6 +20,7 @@ function App() {
       <TabWrapper />
       <Cards />
       <AccordionWrapper />
+      <Newsletter />
     </PageWrapper>
   )
 }

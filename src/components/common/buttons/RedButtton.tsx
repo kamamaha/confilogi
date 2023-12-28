@@ -4,15 +4,16 @@ import { Button } from "@chakra-ui/react"
 type Props = {
   text: string
   isCapitalized?: boolean
+  withShadow?: boolean
 }
 
-const RedButton: FC<Props> = ({ text, isCapitalized = false }) => (
+const RedButton: FC<Props> = ({ text, isCapitalized = false, withShadow = true }) => (
   <Button
     variant="solid"
     bgColor="hsl(0, 94%, 66%)"
     py={5}
     px={6}
-    boxShadow="0px 8px 11px -4px rgba(210, 213, 237, 1)"
+    boxShadow={withShadow ? "0px 8px 11px -4px rgba(210, 213, 237, 1)" : "none"}
     color="white"
     borderRadius="5px"
     fontWeight={500}
