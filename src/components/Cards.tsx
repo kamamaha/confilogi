@@ -1,5 +1,5 @@
 import React from "react"
-import { Text, Flex, Stack, Box, Heading, Image } from "@chakra-ui/react"
+import { Text, Flex, Stack, Box } from "@chakra-ui/react"
 import ChromeImage from "../assets/logo-chrome.svg"
 import FirefoxImage from "../assets/logo-firefox.svg"
 import OperaImage from "../assets/logo-opera.svg"
@@ -20,7 +20,7 @@ const Cards = () => {
         Download the extension
       </Text>
       <Flex pl={4} pr={4} flex={1} align={"center"} justify={"center"}>
-        <Text as={"p"} fontSize="lg" align={"center"} maxW={"450px"} pt={30}>
+        <Text as={"p"} fontSize="lg" align={"center"} maxW={"500px"} pt={30}>
           We.ve got more browsers in the pipeline. Please do let us know if
           you.ve got a favourite you'd like us to proritize.
         </Text>

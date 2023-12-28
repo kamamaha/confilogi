@@ -82,7 +82,7 @@ const TabWrapper = () => {
         Features
       </Text>
       <Flex pl={4} pr={4} flex={1} align={"center"} justify={"center"}>
-        <Text as={"p"} fontSize="lg" align={"center"} maxW={"450px"} pt={30}>
+        <Text as={"p"} fontSize="lg" align={"center"} maxW={"500px"} pt={30}>
           Our aim is to make it quick and for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
@@ -90,10 +90,9 @@ const TabWrapper = () => {
       </Flex>
       <TabList
         w={"fit-content"}
-        mt={"50px"}
-        mb={"50px"}
-        ml={"auto"}
-        mr={"auto"}
+        my={"50px"}
+        mx={"auto"}
+      
       >
         <Stack direction={{ base: "column", md: "row" }}>
           <TabSelect>
@@ -108,8 +107,7 @@ const TabWrapper = () => {
           <Stack
             direction={{ base: "column", md: "row" }}
             maxW={"1440px"}
-            ml={"auto"}
-            mr={"auto"}
+            mx={"auto"}
           >
             <ImageWrapper>
               <IllustrationTab1 />
@@ -139,8 +137,8 @@ const TabWrapper = () => {
                 <Stack
                   direction={{ base: "row", md: "row" }}
                   spacing={4}
-                  ml={{ base: "auto", md: "0" }}
-                  mr={{ base: "auto", md: "0" }}
+                  mx={{ base: "auto", md: "0" }}
+                  
                 >
                   <BlueButton text="More Info" />
                 </Stack>
