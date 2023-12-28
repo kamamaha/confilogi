@@ -2,6 +2,7 @@ import React from "react"
 import Navbar from "./components/navbar/Navbar"
 import Hero from "./components/Hero"
 import styled from "styled-components"
+import TabWrapper from "./components/TabWrapper"
 
 const PageWrapper = styled.div`
   margin-left: auto;
@@ -13,6 +14,7 @@ function App() {
     <PageWrapper>
       <Navbar />
       <Hero />
+      <TabWrapper />
     </PageWrapper>
   )
 }

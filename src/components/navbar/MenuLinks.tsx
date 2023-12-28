@@ -12,6 +12,7 @@ const MenuLinks: FC<Props> = ({ isOpen }) => {
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}
       flexBasis={{ base: "100%", md: "auto" }}
+      height={{ base: "100vh", md: "auto" }}
     >
       <Stack
         spacing={8}

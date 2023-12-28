@@ -1,5 +1,6 @@
 import React, { FC } from "react"
 import { Button } from "@chakra-ui/react"
+
 type Props = {
   text: string
 }

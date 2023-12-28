@@ -6,8 +6,9 @@ import Logo from "./Logo"
 
 type NavBarContainerProps = {
   children: ReactElement[]
+  isOpen: boolean
 }
-const NavBarContainer: FC<NavBarContainerProps> = ({ children }) => {
+const NavBarContainer: FC<NavBarContainerProps> = ({ children, isOpen }) => {
   return (
     <Flex
       as="nav"
@@ -15,9 +16,11 @@ const NavBarContainer: FC<NavBarContainerProps> = ({ children }) => {
       justify="space-between"
       wrap="wrap"
       w="100%"
-      mb={8}
+      mb={3}
       p={8}
-      bg="white"
+      position="fixed"
+      zIndex={1140}
+      bgColor={{ base: isOpen ? "hsl(229, 31%, 21%, 90%)" : "white" }}
     >
       {children}
     </Flex>
@@ -29,8 +32,18 @@ const NavBar = () => {
 
   const toggle = () => setIsOpen(!isOpen)
 
+  if (isOpen) {
+    return (
+      <NavBarContainer isOpen={isOpen}>
+        <Logo />
+        <MenuToggle toggle={toggle} isOpen={isOpen} />
+        <MenuLinks isOpen={isOpen} />
+      </NavBarContainer>
+    )
+  }
+
   return (
-    <NavBarContainer>
+    <NavBarContainer isOpen={isOpen}>
       <Logo />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
