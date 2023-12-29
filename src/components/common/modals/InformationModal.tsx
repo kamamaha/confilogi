@@ -19,9 +19,6 @@ const InformationModal: FC<Props> = ({ isOpen, onClose, children }) => (
     <ModalOverlay />
     <ModalContent>
       <ModalBody p={0}>{children}</ModalBody>
-      <ModalFooter>
-        <RedButton text="Close" onClick={onClose} />
-      </ModalFooter>
     </ModalContent>
   </Modal>
 )
