@@ -11,7 +11,6 @@ import {
   Flex,
 } from "@chakra-ui/react"
 
-
 type Props = {
   numberOfUsers?: number
   countdownTime?: number
@@ -20,7 +19,6 @@ type Props = {
 const Newsletter: FC<Props> = ({
   numberOfUsers = 35000,
   countdownTime = 20000,
-
 }) => {
   const [email, setEmail] = useState("")
   const [state, setState] = useState<"initial" | "submitting" | "success">(
@@ -40,12 +38,13 @@ const Newsletter: FC<Props> = ({
       }
       setJoinedNumber((prev) => prev - interval)
     }, 100)
-  
+
     return () => clearInterval(timer)
   }, [joinedNumber])
 
   return (
-    <Flex id="contact"
+    <Flex
+      id="contact"
       align={"center"}
       justify={"center"}
       py={10}
@@ -54,7 +53,16 @@ const Newsletter: FC<Props> = ({
       data-testid="newsletter"
     >
       <Container maxW={"xl"} p={6}>
-        <Text color={"white"} letterSpacing={"3px"} textTransform={"uppercase"} fontSize={"12px"} align={"center"} mb={{ base: "20px", md: "50px" }}>{joinedNumber}+ already joined</Text>
+        <Text
+          color={"white"}
+          letterSpacing={"3px"}
+          textTransform={"uppercase"}
+          fontSize={"12px"}
+          align={"center"}
+          mb={{ base: "20px", md: "50px" }}
+        >
+          {joinedNumber}+ already joined
+        </Text>
         <Text
           as={"h3"}
           align={"center"}
@@ -109,25 +117,24 @@ const Newsletter: FC<Props> = ({
             />
           </FormControl>
           <FormControl w={{ base: "100%", md: "40%" }}>
-            <Button 
-      
-            variant="solid"
-            bgColor="hsl(0, 94%, 66%)"
-            py={5}
-            px={6}
-            color="white"
-            borderRadius="5px"
-            fontWeight={500}
-            border="2px"
-            borderColor="hsl(0, 94%, 66%)"
-            fontSize="12px"
-            letterSpacing="1.5px"
-            _hover={{
-              bg: "#ffffff",
-              color: "hsl(0, 94%, 66%)",
-              border: "2px",
-              borderColor: "hsl(0, 94%, 66%)",
-            }}
+            <Button
+              variant="solid"
+              bgColor="hsl(0, 94%, 66%)"
+              py={5}
+              px={6}
+              color="white"
+              borderRadius="5px"
+              fontWeight={500}
+              border="2px"
+              borderColor="hsl(0, 94%, 66%)"
+              fontSize="12px"
+              letterSpacing="1.5px"
+              _hover={{
+                bg: "#ffffff",
+                color: "hsl(0, 94%, 66%)",
+                border: "2px",
+                borderColor: "hsl(0, 94%, 66%)",
+              }}
               isLoading={state === "submitting"}
               w="100%"
               type={state === "success" ? "button" : "submit"}

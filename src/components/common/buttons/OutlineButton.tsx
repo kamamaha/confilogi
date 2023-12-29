@@ -4,10 +4,12 @@ import { Button } from "@chakra-ui/react"
 type Props = {
   text: string
   isCapitalized?: boolean
+  onClick?: () => void
 }
 
-const OutlineButton: FC<Props> = ({ text, isCapitalized = false}) => (
+const OutlineButton: FC<Props> = ({ text, isCapitalized = false, onClick }) => (
   <Button
+    onClick={onClick}
     variant="solid"
     bg="none"
     py={5}

@@ -1,12 +1,8 @@
-import React, { FC, ReactElement } from 'react'
-import {
-    Text,
-    Flex,
-    Stack,
-  } from "@chakra-ui/react"
-import BlueButton from './common/buttons/BlueButton'
-import styled from 'styled-components'
-import { lightBlue } from '../theme'
+import React, { FC, ReactElement } from "react"
+import { Text, Flex, Stack } from "@chakra-ui/react"
+import BlueButton from "../common/buttons/BlueButton"
+import styled from "styled-components"
+import { lightBlue } from "../../theme"
 
 const BackgroundShape = styled.div`
   background-color: ${lightBlue};
@@ -42,22 +38,19 @@ const ImageWrapper = styled.div`
 `
 
 type Props = {
-    title: string
-    content: string
-    imageComponent: ReactElement
+  title: string
+  content: string
+  imageComponent: ReactElement
 }
 
-const SingleTab: FC<Props> = ({title, content, imageComponent}) => {
-  return (
-    <>
+const SingleTab: FC<Props> = ({ title, content, imageComponent }) => (
+  <>
     <Stack
       direction={{ base: "column", md: "row" }}
       maxW={"1440px"}
       mx={"auto"}
     >
-      <ImageWrapper>
-        {imageComponent}
-      </ImageWrapper>
+      <ImageWrapper>{imageComponent}</ImageWrapper>
 
       <Flex pl={4} pr={4} flex={1} align={"center"} justify={"center"}>
         <Stack spacing={6} w={"full"} maxW={"lg"}>
@@ -71,18 +64,13 @@ const SingleTab: FC<Props> = ({title, content, imageComponent}) => {
           >
             {title}
           </Text>
-          <Text
-            as={"p"}
-            fontSize="lg"
-            align={{ base: "center", md: "left" }}
-          >
+          <Text as={"p"} fontSize="lg" align={{ base: "center", md: "left" }}>
             {content}
           </Text>
           <Stack
             direction={{ base: "row", md: "row" }}
             spacing={4}
             mx={{ base: "auto", md: "0" }}
-            
           >
             <BlueButton text="More Info" />
           </Stack>
@@ -93,7 +81,6 @@ const SingleTab: FC<Props> = ({title, content, imageComponent}) => {
       <BackgroundShape />
     </Flex>
   </>
-  )
-}
+)
 
 export default SingleTab

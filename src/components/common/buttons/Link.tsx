@@ -14,7 +14,7 @@ const Link: FC<Props> = ({
   color = "hsl(229, 31%, 21%)",
   isOpen,
   to = "#",
-  isLast
+  isLast,
 }) => {
   const onClick = () => {
     window.location.href = to
@@ -28,8 +28,8 @@ const Link: FC<Props> = ({
       px={6}
       width={isOpen ? "100%" : "auto"}
       color={isOpen ? "white" : color}
-      borderTop={isOpen ? "0.5px solid grey" : 'none'}
-      borderBottom={isOpen && isLast ? "0.5px solid grey" : 'none'}
+      borderTop={isOpen ? "0.5px solid grey" : "none"}
+      borderBottom={isOpen && isLast ? "0.5px solid grey" : "none"}
       fontSize={isOpen ? "18px" : "12px"}
       borderRadius="none"
       fontWeight={isOpen ? 400 : 500}

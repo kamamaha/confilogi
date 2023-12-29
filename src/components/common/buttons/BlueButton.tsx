@@ -2,10 +2,12 @@ import React, { FC } from "react"
 import { Button } from "@chakra-ui/react"
 type Props = {
   text: string
+  onClick?: () => void
 }
 
-const BlueButton: FC<Props> = ({ text }) => (
+const BlueButton: FC<Props> = ({ text, onClick }) => (
   <Button
+    onClick={onClick}
     variant="solid"
     bgColor="hsl(231, 69%, 60%)"
     py={5}

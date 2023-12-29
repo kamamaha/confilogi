@@ -8,9 +8,14 @@ type Props = {
   onClick?: () => void
 }
 
-const RedButton: FC<Props> = ({ text, isCapitalized = false, withShadow = true, onClick }) => (
+const RedButton: FC<Props> = ({
+  text,
+  isCapitalized = false,
+  withShadow = true,
+  onClick,
+}) => (
   <Button
-  onClick={onClick}
+    onClick={onClick}
     variant="solid"
     bgColor="hsl(0, 94%, 66%)"
     py={5}

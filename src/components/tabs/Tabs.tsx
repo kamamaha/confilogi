@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import IllustrationTab1 from "../assets/illustration-features-tab-1.svg"
-import IllustrationTab2 from "../assets/illustration-features-tab-2.svg"
-import IllustrationTab3 from "../assets/illustration-features-tab-3.svg"
+import IllustrationTab1 from "../../assets/illustration-features-tab-1.svg"
+import IllustrationTab2 from "../../assets/illustration-features-tab-2.svg"
+import IllustrationTab3 from "../../assets/illustration-features-tab-3.svg"
 import {
   Text,
   Flex,
@@ -13,7 +13,7 @@ import {
   TabPanel,
 } from "@chakra-ui/react"
 import styled from "styled-components"
-import { lightBlue } from "../theme"
+import { lightBlue } from "../../theme"
 import SingleTab from "./SingleTab"
 
 const TabSelect = styled.div`
@@ -38,7 +38,7 @@ const Tabs = () => {
   const [tabIndex, setTabIndex] = useState(0)
   return (
     <TabsComponent
-    data-testid="tabs"
+      data-testid="tabs"
       id="features"
       onChange={(index) => setTabIndex(index)}
       mt={150}

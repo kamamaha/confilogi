@@ -24,7 +24,7 @@ describe("<App />", () => {
         <App />
       </ChakraProvider>
     )
-    
+
     const navbar = await screen.findByTestId("nav-bar")
     const hero = await screen.findByTestId("hero")
     const tabs = await screen.findByTestId("tabs")
