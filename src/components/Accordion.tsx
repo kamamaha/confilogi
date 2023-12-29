@@ -2,7 +2,7 @@ import React from "react"
 import {
   Text,
   Flex,
-  Accordion,
+  Accordion as AccordionComponent,
   AccordionItem,
   AccordionButton,
   AccordionPanel,
@@ -39,7 +39,7 @@ const AccordionContainer = styled.div`
 `
 
 
-const AccordionWrapper = () => {
+const Accordion = () => {
   return (
     <>
       <Text
@@ -64,7 +64,7 @@ const AccordionWrapper = () => {
       <AccordionContainer>
 
              
-      <Accordion allowToggle>
+      <AccordionComponent allowToggle>
         <AccordionItem>
           <h2>
             <AccordionButton>
@@ -134,7 +134,7 @@ const AccordionWrapper = () => {
         </AccordionItem>
 
 
-      </Accordion>
+      </AccordionComponent>
       </AccordionContainer>
       <Stack
                   direction={{ base: "row", md: "row" }}
@@ -148,4 +148,4 @@ const AccordionWrapper = () => {
   )
 }
 
-export default AccordionWrapper
+export default Accordion
