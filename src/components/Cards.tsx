@@ -26,6 +26,7 @@ const Cards = () => {
         </Text>
       </Flex>
       <Stack
+      data-testid="cards"
         direction={{ base: "column", lg: "row" }}
         justifyContent={"center"}
         flexFlow={"wrap"}

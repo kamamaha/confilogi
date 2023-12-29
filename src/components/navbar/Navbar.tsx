@@ -10,10 +10,10 @@ type NavBarContainerProps = {
   isOpen: boolean
 }
 
-
 const NavBarContainer: FC<NavBarContainerProps> = ({ children, isOpen }) => {
   return (
     <Flex
+      data-testid="nav-bar"
       as="nav"
       align="center"
       justify="space-between"

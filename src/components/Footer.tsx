@@ -28,7 +28,7 @@ display: flex;
 const Footer = () => (
   <Box
     bg={"hsl(229, 31%, 21%)"}
-    
+    data-testid="footer"
   >
     <Container
       as={Stack}

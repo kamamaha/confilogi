@@ -38,6 +38,7 @@ const Tabs = () => {
   const [tabIndex, setTabIndex] = useState(0)
   return (
     <TabsComponent
+    data-testid="tabs"
       id="features"
       onChange={(index) => setTabIndex(index)}
       mt={150}

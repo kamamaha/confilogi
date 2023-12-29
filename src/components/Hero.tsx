@@ -39,7 +39,7 @@ const BackgroundShape = styled.div`
   }
 `
 const Hero = () => (
-  <Stack>
+  <Stack data-testid="hero">
     <Stack
       direction={{ base: "column", md: "row" }}
       maxW={"1440px"}

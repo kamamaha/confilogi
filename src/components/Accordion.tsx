@@ -60,7 +60,8 @@ const Accordion = () => {
       </Flex>
     <Stack maxW={"650px"}
             mx={"auto"}
-            mt={50} px={"20px"}>
+            mt={50} px={"20px"}
+            data-testid="accordion">
       <AccordionContainer>
 
              

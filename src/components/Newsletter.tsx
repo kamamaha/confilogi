@@ -51,6 +51,7 @@ const Newsletter: FC<Props> = ({
       py={10}
       bg={useColorModeValue("hsl(231, 69%, 60%)", "hsl(231, 69%, 60%)")}
       mt={150}
+      data-testid="newsletter"
     >
       <Container maxW={"xl"} p={6}>
         <Text color={"white"} letterSpacing={"3px"} textTransform={"uppercase"} fontSize={"12px"} align={"center"} mb={{ base: "20px", md: "50px" }}>{joinedNumber}+ already joined</Text>
