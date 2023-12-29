@@ -4,7 +4,6 @@ import {
   Box,
   Container,
   Stack,
-  useColorModeValue,
 } from "@chakra-ui/react"
 import Link from "../components/common/buttons/Link"
 import LogoWhite from "./common/icons/LogoWhite"
@@ -37,11 +36,10 @@ const Footer = () => (
       py={5}
       px={8}
       direction={{ base: "column", md: "row" }}
-      spacing={6}
       justify="space-between"
       align="center"
     >
-      <Stack direction={{ base: "column", md: "row" }} spacing={50} alignItems={"center"}>
+      <Stack direction={{ base: "column", md: "row" }} alignItems={"center"}>
         <LogoWhite />
           <Link text="features" to="#features" color="white" />
           <Link text="pricing" to="#pricing" color="white" />

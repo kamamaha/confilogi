@@ -9,6 +9,7 @@ import styled from "styled-components"
 
 const SocialWrapper = styled.div`
 display: flex;
+margin-top: 10vh;
   svg{
     margin: 0 20px;
     path{

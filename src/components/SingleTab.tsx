@@ -3,7 +3,6 @@ import {
     Text,
     Flex,
     Stack,
-    TabPanel,
   } from "@chakra-ui/react"
 import BlueButton from './common/buttons/BlueButton'
 import styled from 'styled-components'

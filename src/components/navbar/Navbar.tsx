@@ -3,13 +3,14 @@ import { Flex } from "@chakra-ui/react"
 import MenuToggle from "./MenuToggle"
 import MenuLinks from "./MenuLinks"
 import Logo from "../common/icons/Logo"
-import LogoWhite from "../common/icons/LogoWhite"
 import LogoMobile from "../common/icons/LogoMobile"
 
 type NavBarContainerProps = {
   children: ReactElement[]
   isOpen: boolean
 }
+
+
 const NavBarContainer: FC<NavBarContainerProps> = ({ children, isOpen }) => {
   return (
     <Flex
